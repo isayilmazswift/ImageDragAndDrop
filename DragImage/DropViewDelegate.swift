@@ -7,14 +7,40 @@
 
 import SwiftUI
 
-struct DropViewDelegate: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct DropViewDelegate: DropDelegate {
 
-struct DropViewDelegate_Previews: PreviewProvider {
-    static var previews: some View {
-        DropViewDelegate()
+    var imageModel: ImageModel
+    var imageData: ImageViewModel
+
+    func performDrop(info: DropInfo) -> Bool {
+        imageData.currentPage = nil
+        
+        return true
+    }
+    
+    func dropEntered(info: DropInfo) {
+        if imageData.currentPage == nil {
+            imageData.currentPage = imageModel
+        }
+       
+        
+        //from index
+        let fromIndex = imageModel.image.firstIndex{ (page) -> Bool in
+            return imageModel.id == imageData.currentPage?.id
+            
+        }
+        
+        //to index
+        let toIndex = imageModel.image.firstIndex{ (page) -> Bool in
+            return imageModel.id == self.imageModel.id
+            
+        }
+        
+        
+        
+    }
+    
+    func dropUpdated(info: DropInfo) -> DropProposal? {
+        return DropProposal(operation: .move)
     }
 }

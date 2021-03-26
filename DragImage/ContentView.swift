@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var image = ImageModel(image: "deneme")
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        MovePage(image: image)
     }
 }
 

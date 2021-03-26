@@ -11,6 +11,10 @@
 		CA1ED135260DC8A2009AE5F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ED134260DC8A2009AE5F5 /* ContentView.swift */; };
 		CA1ED137260DC8A2009AE5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1ED136260DC8A2009AE5F5 /* Assets.xcassets */; };
 		CA1ED13A260DC8A2009AE5F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1ED139260DC8A2009AE5F5 /* Preview Assets.xcassets */; };
+		CA1ED143260DCDFB009AE5F5 /* MovePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ED142260DCDFB009AE5F5 /* MovePage.swift */; };
+		CA1ED146260DCEA4009AE5F5 /* DropViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ED145260DCEA4009AE5F5 /* DropViewDelegate.swift */; };
+		CA1ED149260DCEF4009AE5F5 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ED148260DCEF4009AE5F5 /* ImageModel.swift */; };
+		CA1ED14C260DCF2F009AE5F5 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ED14B260DCF2F009AE5F5 /* ImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		CA1ED136260DC8A2009AE5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA1ED139260DC8A2009AE5F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA1ED13B260DC8A2009AE5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1ED142260DCDFB009AE5F5 /* MovePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePage.swift; sourceTree = "<group>"; };
+		CA1ED145260DCEA4009AE5F5 /* DropViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropViewDelegate.swift; sourceTree = "<group>"; };
+		CA1ED148260DCEF4009AE5F5 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		CA1ED14B260DCF2F009AE5F5 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			children = (
 				CA1ED132260DC8A2009AE5F5 /* DragImageApp.swift */,
 				CA1ED134260DC8A2009AE5F5 /* ContentView.swift */,
+				CA1ED142260DCDFB009AE5F5 /* MovePage.swift */,
+				CA1ED14B260DCF2F009AE5F5 /* ImageViewModel.swift */,
+				CA1ED148260DCEF4009AE5F5 /* ImageModel.swift */,
+				CA1ED145260DCEA4009AE5F5 /* DropViewDelegate.swift */,
 				CA1ED136260DC8A2009AE5F5 /* Assets.xcassets */,
 				CA1ED13B260DC8A2009AE5F5 /* Info.plist */,
 				CA1ED138260DC8A2009AE5F5 /* Preview Content */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1ED146260DCEA4009AE5F5 /* DropViewDelegate.swift in Sources */,
+				CA1ED14C260DCF2F009AE5F5 /* ImageViewModel.swift in Sources */,
+				CA1ED149260DCEF4009AE5F5 /* ImageModel.swift in Sources */,
 				CA1ED135260DC8A2009AE5F5 /* ContentView.swift in Sources */,
+				CA1ED143260DCDFB009AE5F5 /* MovePage.swift in Sources */,
 				CA1ED133260DC8A2009AE5F5 /* DragImageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

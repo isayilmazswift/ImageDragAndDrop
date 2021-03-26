@@ -7,14 +7,24 @@
 
 import SwiftUI
 
-struct ImageViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+class ImageViewModel: ObservableObject {
+    
+    @Published var selectedTab = "tabs"
+    
+    @Published var images = [
+        
+        ImageModel(image: "deneme"),
+        ImageModel(image: "grid"),
+        ImageModel(image: "deneme"),
+        ImageModel(image: "grid"),
+        ImageModel(image: "deneme"),
+        ImageModel(image: "grid"),
+        ImageModel(image: "deneme"),
+        ImageModel(image: "grid"),
+        
+
+    ]
+    
+    @Published var currentPage : ImageModel?
 }
 
-struct PageViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        ImageViewModel()
-    }
-}
